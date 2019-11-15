@@ -1,0 +1,31 @@
+[
+    {
+      "qId":1,
+      "question":"What popular song by Shakira hit the number #1 spot in over 50 different countries?",
+      "options":["Whenever, Wherever","Illegal", "Hips Dont Lie", "How Do You Do?"],
+        "answer":3
+    },
+    {
+      "qId":2,
+      "question":"The song 'Wait A Minute' was promoted before being released by being featured on a Best Buy commercial. What famous pop group sang this instant hit?",
+      "options":["Maroon 5", "Black Eyes Peas", "The Pussycat Dolls", "D.H.T"],
+      "answer":3
+    },
+    {
+      "qId":3,
+      "question":"The song 'Rehab' was first released in Ireland. What British pop singer came up with this R&B song?",
+      "options":["Macy Gray", "Lily Allen", "Amy Winehouse", "Kylie Minogue"],
+      "answer":3
+    },
+    {
+      "qId":4,
+      "question":"The song 'Not Ready to Make Nice' received the Song of the Year Award at the 49th Grammy Awards. What group performed this deep song?",
+      "options":["Alanis Morissette", "Evanscence", "Corinne Bailey Rae", "The Dixie Chicks"],      "answer":4
+    },
+    {
+      "qId":5,
+      "question":"What worldwide hit by Rihanna featured a music video where Rihanna dresses up as a French maid?",
+      "options":["SOS", "Good Girl Gone Bad", "Shut Up And Drive", "Umbrella"],
+      "answer":4
+    }
+]
