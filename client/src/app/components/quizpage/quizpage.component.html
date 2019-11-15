@@ -1,0 +1,33 @@
+<app-navbar></app-navbar>
+<div class="row" *ngIf="qs.questions">
+    <div class="col s8 offset-s2">
+        <span>Time Elapsed: {{qs.displayTimeElapsed()}}</span>
+        <div class="progress">
+            <div class="determinate" [style.width.%]="(qs.progress+1)*20"></div>
+        </div>
+        <div class="darken-1">
+            <div class="card-content whote-test">
+                <span class="card-title">
+                    {{qs.progress+1}}
+                </span>
+                <p>{{qs.questions[qs.progress].question}}</p>
+            </div>
+            <div class="card-action ">
+                <ul class="collection answer" style="opacity: 0.8;">
+                    <ng-container  *ngFor="let option of qs.questions[qs.progress].options; let i =index">
+                        <li style="text-decoration:none; color:black" *ngIf="option !=null " class="collection-item" (click)="Answer(i+1)">
+                            {{option}}
+                        </li>
+                    </ng-container>
+                </ul>
+            </div>
+            <div>
+                <div class="input-field col s12" style="display: inline-block;">
+                    <button class="btn-small" style=" float: left; background-color: #2E5D68;" (click)="BackPressed()">Back</button>
+                    <button class="btn-small" style="float: right; background-color: #2E5D68;"(click)="NextPressed()">Next</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>

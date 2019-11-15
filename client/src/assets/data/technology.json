@@ -1,0 +1,32 @@
+[
+    {
+      "qId":1,
+      "question":"'OS' computer abbreviation usually means ?",
+      "options":["Order of Significance","Open Software","Operating System","Optical Sensor"],
+        "answer":3
+    },
+    {
+      "qId":2,
+      "question":"How many bits is a byte?",
+      "options":["4", "8", "16", "32"],
+      "answer":2
+    },
+    {
+      "qId":3,
+      "question":"The speed of your net access is defined in terms of...",
+      "options":["RAM", "MHz", "Kbps", "Megabytes"],
+      "answer":3
+    },
+    {
+      "qId":4,
+      "question":"'Which is not an internet protocol?",
+      "options":["HTTP", "STP", "FTP", "IP"],
+      "answer":1
+    },
+    {
+      "qId":5,
+      "question":"Which company created the most used networking software in the 1980's",
+      "options":["Microsoft", "Sun", "IBM", "Novell"],
+      "answer":2
+    }
+ ]

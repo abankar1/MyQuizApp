@@ -1,0 +1,27 @@
+<app-navbar></app-navbar>
+<div class="row">
+    <div class="col s8 offset-s2" >
+        <h2 class="header">
+            Score Board
+        </h2>
+        <div class="card horizontal" style=" background-color:#EFEFEF;opacity: 0.8;" >
+            <div class="card-image">
+                <img [src]="imageUrl" style="width:250px; height:250px;" alt="" class="src">
+            </div>
+            <div class="card-stacked" >
+                <div class="card-content">
+                    <h4>{{qs.getUserName()}}</h4>
+                    <h3>Your Score: {{qs.correctAnsCount}}</h3>
+                    <span>Time Elapsed: {{qs.displayTimeElapsed()}}</span>
+                </div>
+                <!-- <div class="card-action">
+                        <button class="btn" (click)="OnSubmit()">Submit</button>
+                </div> -->
+                </div>
+                <a class="btn-floating halfway-fab waves-effect waves-light red" (click)="restart()">
+                    <i class="material-icons">replay</i>
+                </a>
+            
+        </div>
+    </div>
+</div>

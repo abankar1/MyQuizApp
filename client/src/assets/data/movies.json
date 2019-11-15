@@ -1,0 +1,31 @@
+[
+    {
+     "qId":1,
+     "question":"What is the name of Jasmine's tiger in Aladdin?",
+     "options":["Rajah","Saber","Pawla","Kato"],
+     "answer":1
+    },
+    {
+     "qId":2,
+     "question":"Which Disney princess was actually born a princess, rather than becoming one through marriage?",
+     "options":["Cindarella","Belle","Ariel","Tiana"],
+     "answer":3
+    },
+    {
+     "qId":3,
+     "question":"'After all, tomorrow is another day!' is the last line from which movie that won the Academy Award for Best Picture in 1939?",
+     "options":["Gone with the Wind","James Bond","Terminator","Die Hard"],
+     "answer": 1
+    },
+    {
+     "qId":4,
+     "question":"In which year were the Academy Awards, or 'Oscars' first presented?",
+     "options":["1936","1912","1920","1929"],"answer": 4
+    },
+    {
+     "qId":3,
+     "question":"Which movie won the Academy Award for Best Picture in 2009?",
+     "options":["Slumdog Millionaire","Good Girl Gone Bad","The Avatar","The Hurt Locker"],
+     "answer": 1
+    }
+]

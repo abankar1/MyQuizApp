@@ -1,0 +1,58 @@
+<div class="row">
+    <div class="col offset-s4">
+        
+        <div class="col s8">
+            <h2>Quiz Portal</h2>
+        </div>
+        
+            <div class="card-content col s7">
+                    
+             <!-- <form #loginForm="ngForm" (ngSubmit)="OnSubmit(email.value ,password.value)">
+                  <div class="row">
+                      <div class="input-field col s12">
+                          <i class="material-icons prefix">account_circle</i>
+                          <input type="text" placeholder="Enter your username" name="email" #email ngModel required [pattern]="emailPattern">
+                      </div>
+                  </div>
+                  <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">lock</i>
+                            <input type="password" placeholder="Enter your password" name="password" #password ngModel required>
+                        </div>
+                    </div>
+                    <div class="row">
+                            <div class="input-field col s12">
+                                <button class="btn-large btn-submit" type="submit">Login</button>
+                            </div>
+                        </div>
+              </form>
+
+              <p align="center" style="color:#E70000; font-size:120%;">{{errorMessage | uppercase}}</p>-->
+              <form [formGroup]="myForm" (ngSubmit)="OnSubmit()">
+                    <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">account_circle</i>
+                                <input formControlName="email" placeholder="Enter your username">
+                                    <div *ngIf="myForm.controls.email.hasError('pattern')">
+                                        <p align="center" style="color:#E70000; font-size:110%;">INVALID EMAIL PATTERN</p>
+                                    </div>
+                            </div>
+                    </div>
+                    <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">lock</i>
+                                <input type = "password" formControlName="password" placeholder="Enter your password">
+                    
+                            </div>
+                    </div>
+                    <div class="row">
+                            <div class="input-field col s12">
+                                <button class="btn-large btn-submit" type="submit">Login</button>
+                            </div>
+                    </div>
+              </form>
+              <p align="center" style="color:#E70000; font-size:120%;">{{errorMessage | uppercase}}</p>
+            </div>
+        
+    </div>
+</div>

@@ -1,0 +1,21 @@
+<app-navbar></app-navbar>
+<div class="row">
+  <div class="col s8 offset-s2">
+<div>
+  <h3>Choose a category</h3>
+  <form (ngSubmit)="onSubmit()">
+    <div [(ngModel)]="selectedCategory" [ngModelOptions]="{standalone:
+      true}" name="something">
+    <p *ngFor="let c of quizCategories">
+      <label>
+        <input style="color: black;"class="with-gap" name="selectedCategory" type="radio" checked [value]="c" (change)="radioChangeHandler($event)" />
+        <span style="color: black;">{{c}}</span>
+      </label>
+    </p>
+    </div>
+    <button type="submit" class="btn btn-primary manage" style="background-color: #2E5D68;">Submit</button>
+  </form>
+
+</div>
+</div>
+</div>
