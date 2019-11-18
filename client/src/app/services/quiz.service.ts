@@ -90,4 +90,15 @@ export class QuizService {
     //console.log("Categories:"+this.categories);
     
   }
+  getResult(){
+    const header=new HttpHeaders({'Content-Type':'application/json'});
+    const options={
+      headers: header
+    }
+    var body={
+      "questions":this.questions,
+      "selectedAns":this.selectedAns
+    }
+    return this.http.post(this.serverUrl+'/result', body, options);
+  }
 }

@@ -21,16 +21,7 @@ export class ResultComponent implements OnInit {
       }
      // this.data=this.qs.getAnswers();
      // console.log(this.data);
-      this.qs.correctAnsCount=0;
-      this.qs.questions.forEach((element, index)=>{
-       // console.log("e:"+element.answer);
-        //console.log("d:"+this.data[index]);
-        if(element.answer==this.qs.selectedAns[index])
-      {
-        this.qs.correctAnsCount++;
-        console.log(this.qs.correctAnsCount);
-      }
-      })
+      
       if(this.qs.correctAnsCount>=3)
       {
         this.imageUrl="../../../assets/img/hurray.jpg";

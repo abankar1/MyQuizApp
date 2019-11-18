@@ -53,7 +53,12 @@ export class QuizpageComponent implements OnInit {
     this.qs.progress++;
     if(this.qs.progress==5){
       clearInterval(this.qs.timer);
-      this.router.navigate(['/result']);
+      this.qs.getResult().subscribe(data=>{
+        var recData=JSON.parse(JSON.stringify(data));
+        this.qs.correctAnsCount=recData.correctAnsCount;
+        this.router.navigate(['/result']);
+      })
+      
     }
   }
   BackPressed(){
@@ -72,7 +77,12 @@ export class QuizpageComponent implements OnInit {
     {
       //console.log("reached");
       clearInterval(this.qs.timer);
-      this.router.navigate(['/result']);
+      this.qs.getResult().subscribe(data=>{
+        var recData=JSON.parse(JSON.stringify(data));
+        this.qs.correctAnsCount=recData.correctAnsCount;
+        this.router.navigate(['/result']);
+      })
+      //this.router.navigate(['/result']);
     }
   }
 }

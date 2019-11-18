@@ -97,3 +97,26 @@ app.get('/categories/:category',function(request,response){
     }
 
 });
+
+app.post('/result',function(request, response){
+
+    //console.log("Reached here");
+    var questions=request.body.questions;
+    var selectedAns=request.body.selectedAns;
+
+    console.log(questions);
+    var correctAnsCount=0;
+    questions.forEach((element, index)=>{
+        // console.log("e:"+element.answer);
+         //console.log("d:"+this.data[index]);
+       if(element.answer==selectedAns[index])
+       {
+         correctAnsCount++;
+         //console.log(this.qs.correctAnsCount);
+       }
+       })
+    console.log("Correct Ans:"+correctAnsCount)
+    response.status(200).json({
+        "correctAnsCount":correctAnsCount
+    });
+})
